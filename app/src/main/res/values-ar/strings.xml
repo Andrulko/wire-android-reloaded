@@ -40,7 +40,7 @@
   <string name="label_membership_external">External</string>
   <string name="label_membership_service">Service</string>
   <string name="label_user_deleted">Deleted</string>
-  <string name="label_message_sent_failure">Message could not be sent due to connectivity issues.</string>
+  <string name="label_message_sent_failure">Message could not be sent.</string>
   <string name="label_message_edit_sent_failure">The edited message could not be sent due to connectivity issues.</string>
   <string name="label_message_sent_remotely_failure">Message could not be sent, as the backend %s appears to be offline.</string>
   <string name="label_message_receive_failure">Download Error</string>
@@ -506,7 +506,11 @@
   <string name="label_system_message_you_called">%1$s called</string>
   <string name="label_system_message_and">%1$s and %2$s</string>
   <plurals name="label_system_message_x_more">
+    <item quantity="zero">%1$d more</item>
     <item quantity="one">%1$d more</item>
+    <item quantity="two">%1$d more</item>
+    <item quantity="few">%1$d more</item>
+    <item quantity="many">%1$d more</item>
     <item quantity="other">%1$d more</item>
   </plurals>
   <string name="label_system_message_blocked_user">%1$s blocked this user</string>
@@ -516,34 +520,58 @@
   <string name="label_system_message_new_conversation_receipt_mode">Read receipts are %1$s</string>
   <string name="label_system_message_read_receipt_changed_by_self">%1$s turned read receipts %2$s for everyone</string>
   <string name="label_system_message_read_receipt_changed_by_other">%1$s turned read receipts %2$s for everyone</string>
-  <string name="label_system_message_conversation_history_lost">You haven\'t used this device for a while. some messages may not appear here.</string>
+  <string name="label_system_message_conversation_history_lost">YOU HAVEN\'T USED THIS DEVICE FOR A WHILE. SOME MESSAGES MAY NOT APPEAR HERE.</string>
   <string name="label_system_message_receipt_mode_on">on</string>
   <string name="label_system_message_receipt_mode_off">off</string>
   <!-- Last messages -->
   <plurals name="last_message_self_added_users">
+    <item quantity="zero">You added %1$d people to the conversation</item>
     <item quantity="one">You added 1 person to the conversation</item>
+    <item quantity="two">You added %1$d people to the conversation</item>
+    <item quantity="few">You added %1$d people to the conversation</item>
+    <item quantity="many">You added %1$d people to the conversation</item>
     <item quantity="other">You added %1$d people to the conversation</item>
   </plurals>
   <plurals name="last_message_other_added_self_user">
+    <item quantity="zero">You were added to the conversation</item>
     <item quantity="one">You and 1 other person were added to the conversation</item>
+    <item quantity="two">You and %1$d people were added to the conversation</item>
+    <item quantity="few">You and %1$d people were added to the conversation</item>
+    <item quantity="many">You and %1$d people were added to the conversation</item>
     <item quantity="other">You and %1$d people were added to the conversation</item>
     <item quantity="zero">You were added to the conversation</item>
   </plurals>
   <plurals name="last_message_other_added_other_users">
+    <item quantity="zero">%1$d people were added to the conversation</item>
     <item quantity="one">1 person was added to the conversation</item>
+    <item quantity="two">%1$d people were added to the conversation</item>
+    <item quantity="few">%1$d people were added to the conversation</item>
+    <item quantity="many">%1$d people were added to the conversation</item>
     <item quantity="other">%1$d people were added to the conversation</item>
   </plurals>
   <plurals name="last_message_self_removed_users">
+    <item quantity="zero">You removed %1$d people from the conversation</item>
     <item quantity="one">You removed 1 person from the conversation</item>
+    <item quantity="two">You removed %1$d people from the conversation</item>
+    <item quantity="few">You removed %1$d people from the conversation</item>
+    <item quantity="many">You removed %1$d people from the conversation</item>
     <item quantity="other">You removed %1$d people from the conversation</item>
   </plurals>
   <plurals name="last_message_other_removed_self_user">
+    <item quantity="zero">You were removed from the conversation</item>
     <item quantity="one">You and 1 other person were removed from the conversation</item>
+    <item quantity="two">You and %1$d people were removed from the conversation</item>
+    <item quantity="few">You and %1$d people were removed from the conversation</item>
+    <item quantity="many">You and %1$d people were removed from the conversation</item>
     <item quantity="other">You and %1$d people were removed from the conversation</item>
     <item quantity="zero">You were removed from the conversation</item>
   </plurals>
   <plurals name="last_message_other_removed_other_users">
+    <item quantity="zero">%1$d people were removed from the conversation</item>
     <item quantity="one">1 person was removed from the conversation</item>
+    <item quantity="two">%1$d people were removed from the conversation</item>
+    <item quantity="few">%1$d people were removed from the conversation</item>
+    <item quantity="many">%1$d people were removed from the conversation</item>
     <item quantity="other">%1$d people were removed from the conversation</item>
   </plurals>
   <string name="last_message_asset">shared media asset</string>
@@ -558,15 +586,27 @@
   <string name="last_message_change_conversation_name">changed conversation name</string>
   <string name="last_message_calling">%1$s calling...</string>
   <plurals name="last_message_people_added">
+    <item quantity="zero">added %1$d people</item>
     <item quantity="one">added %1$d person</item>
+    <item quantity="two">added %1$d people</item>
+    <item quantity="few">added %1$d people</item>
+    <item quantity="many">added %1$d people</item>
     <item quantity="other">added %1$d people</item>
   </plurals>
   <plurals name="last_message_people_removed">
+    <item quantity="zero">removed %1$d people</item>
     <item quantity="one">removed %1$d person</item>
+    <item quantity="two">removed %1$d people</item>
+    <item quantity="few">removed %1$d people</item>
+    <item quantity="many">removed %1$d people</item>
     <item quantity="other">removed %1$d people</item>
   </plurals>
   <plurals name="last_message_people">
+    <item quantity="zero">%1$d people</item>
     <item quantity="one">%1$d person</item>
+    <item quantity="two">%1$d people</item>
+    <item quantity="few">%1$d people</item>
+    <item quantity="many">%1$d people</item>
     <item quantity="other">%1$d people</item>
   </plurals>
   <string name="last_message_joined_conversation">joined the conversation.</string>
@@ -575,23 +615,43 @@
   <string name="last_message_from_conversation">from conversation</string>
   <!-- Unread Events -->
   <plurals name="unread_event_knock">
+    <item quantity="zero">%1$d pings</item>
     <item quantity="one">%1$d ping</item>
+    <item quantity="two">%1$d pings</item>
+    <item quantity="few">%1$d pings</item>
+    <item quantity="many">%1$d pings</item>
     <item quantity="other">%1$d pings</item>
   </plurals>
   <plurals name="unread_event_call">
+    <item quantity="zero">%1$d missed calls</item>
     <item quantity="one">%1$d missed call</item>
+    <item quantity="two">%1$d missed calls</item>
+    <item quantity="few">%1$d missed calls</item>
+    <item quantity="many">%1$d missed calls</item>
     <item quantity="other">%1$d missed calls</item>
   </plurals>
   <plurals name="unread_event_mention">
+    <item quantity="zero">%1$d mentions</item>
     <item quantity="one">%1$d mention</item>
+    <item quantity="two">%1$d mentions</item>
+    <item quantity="few">%1$d mentions</item>
+    <item quantity="many">%1$d mentions</item>
     <item quantity="other">%1$d mentions</item>
   </plurals>
   <plurals name="unread_event_reply">
+    <item quantity="zero">%1$d replies</item>
     <item quantity="one">%1$d reply</item>
+    <item quantity="two">%1$d replies</item>
+    <item quantity="few">%1$d replies</item>
+    <item quantity="many">%1$d replies</item>
     <item quantity="other">%1$d replies</item>
   </plurals>
   <plurals name="unread_event_message">
+    <item quantity="zero">%1$d messages</item>
     <item quantity="one">%1$d message</item>
+    <item quantity="two">%1$d messages</item>
+    <item quantity="few">%1$d messages</item>
+    <item quantity="many">%1$d messages</item>
     <item quantity="other">%1$d messages</item>
   </plurals>
   <!--Search Contact-->
